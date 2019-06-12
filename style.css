@@ -1,0 +1,149 @@
+*{margin: 0; padding: 0;}
+
+body{font-family: 'Nanum Gothic', sans-serif;
+     font-family: 'Concert One', cursive;
+     font-size: 14px; color: #000; background-color: #fff; 
+     line-height: 1.6;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: #333;}
+
+#Wrap{width: 1200px; margin: 0 auto;}
+.hd_wrap{clear: both; width: 100%; height: 140px; position: relative;}
+
+/* 상단메뉴 */
+.tnb{width: 100%; height: 30px; position: relative;}
+.h_munu1{position: absolute; right: 260px; top: 10px;}
+.h_munu1 li{float: left; margin-left: 10px;}
+.h_munu1 li a{font-size: 12px;}
+.h_munu1 li a:hover{color: #ffd43f;}
+.h_munu2{position: absolute; right: 74px; top: 16.3px;}
+.h_munu2 li{float: left;}
+.h_munu2 li a{display: block; height: 14px; background-repeat: no-repeat; margin-left: 14px;}
+.h_munu2 li.icon1 a{width: 13px; background-image: url(Pancoat_Image/magnifier_icon.png)}
+.h_munu2 li.icon2 a{width: 14px; background-image: url(Pancoat_Image/heart_icon.png); margin-top: 0.2px;}
+.h_munu2 li.icon3 a{width: 14px; background-image: url(Pancoat_Image/basket_icon.png);}
+.h_munu2 li.icon1 a:hover{background-image: url(Pancoat_Image/magnifier_icon_hover.png);}
+.h_munu2 li.icon2 a:hover{background-image: url(Pancoat_Image/heart_icon_hover.png);}
+.h_munu2 li.icon3 a:hover{background-image: url(Pancoat_Image/basket_icon_hover.png);}
+
+/* 로고랑 메뉴랑 */
+#hd{clear: both; height: 80px;}
+.logo{width: 115px; height: 27px; margin: 0 auto; display: block; padding-top: 25px;}
+.gnb{width: 600px; margin: 15px auto;}
+.gnb li{float: left; width: 120px; position: relative;}
+.gnb li a.mnb{display: block; line-height: 69px;}
+.gnb li a:hover{color: #ffd43f;}
+.sub_munu{display: none; z-index: 100; position: absolute; left: -10px;}
+.sub_munu li{clear: both; height: 32px; background-color: rgba(255, 255, 255, 0.7); padding-bottom: 5px;}
+.sub_munu li a{font-weight: 600; line-height: 32px;display: block;  text-indent: 13px; font-size: 12px;}
+.gnb li:hover .sub_munu{display: block;}
+
+/* page1 */
+.page{height: 100%; clear: both;}
+#content{width: 1200px; margin: 0 auto;}
+#page1{}
+#visual{height: 100%; position: relative; overflow: hidden;}
+.bnBox{width: 200%; height: 100%;}
+.bnBox li{float: left; width: 50%; height: 100%;}
+.bnBox li a{display: block; width: 100%; height: 100%;}
+.bnBox li a img{display: block; width: 100%; height: 100%;}
+.btn{position: absolute; top: 50%; left: 1%; width: 98%;}
+.btn label{display: block; width: 31px; height: 40px; background-image: url(Pancoat_Image/bt.png); text-indent: -9999px; cursor: pointer;}
+.prev{float: left; background-position: left center;}
+.next{float: right; background-position: right center;}
+
+/* page2 */
+.pageTitle{width: 100%; text-align: center; margin-top: 100px; font-size: 40px;}
+#page2{width: 1200px; height: 690px;}
+#pp{position: relative; width: 730px; height: 520px; margin: 30px auto;}
+#pp a img{box-shadow: 5px 7px rgba(150, 147, 147, 0.8);}
+.pp1{position: absolute; top: 0; right: 256px;}
+.pp2{position: absolute; top: 0; right: 0;}
+.pp3{position: absolute; top: 250px; left: 0;}
+.pp4{position: absolute; top: 250px; left: 223px;}
+.pp5{position: absolute; bottom: 0; right: 0;}
+
+/* page3 */
+#page3{width: 1200px; height: 400px; clear: both;}
+#bs{width: 1058px; height: 357px; margin: 30px auto;}
+#bs ul{}
+#bs ul li{float: left;}
+#bs ul li a{display: block; width: 205px; height: 275px; background-repeat: no-repeat; transition: all 0.6s; background-position: center center;}
+#bs ul li.bs1 a{background-image: url(Pancoat_Image/BS_1.png);}
+#bs ul li.bs2 a{background-image: url(Pancoat_Image/BS_2.png);}
+#bs ul li.bs3 a{background-image: url(Pancoat_Image/BS_3.png);}
+#bs ul li.bs4 a{background-image: url(Pancoat_Image/BS_4.png);}
+#bs ul li.bs5 a{background-image: url(Pancoat_Image/BS_5.png);}
+#bs ul li.bs1 a:hover{background-image: url(Pancoat_Image/BS_ov1.jpg);}
+#bs ul li.bs2 a:hover{background-image: url(Pancoat_Image/BS_ov2.jpg);}
+#bs ul li.bs3 a:hover{background-image: url(Pancoat_Image/BS_ov3.jpg);}
+#bs ul li.bs4 a:hover{background-image: url(Pancoat_Image/BS_ov4.jpg);}
+#bs ul li.bs5 a:hover{background-image: url(Pancoat_Image/BS_ov5.jpg);}
+
+/* page4 */
+#page4{width: 1200px; height: 530px; display: block;}
+.smanu{width: 100%; height: auto; font-size: 13px;}
+.smanu ul{width: 210px; height: 30px; margin: 0 auto;}
+.smanu ul li{float: left; width: 65px; text-align: center; margin-top: 10px;}
+.smanu ul li a{}
+.smanu ul li a:hover{color: #ffd43f;}
+#LAT{width: 100%; height: 410px; display: -webkit-inline-box; margin-top: 20px;}
+#LAT_box1{width: 34%; padding-left: 5%;}
+#LAT_box1 a img{width: 195px; height: 204px;}
+#LAT_box2{margin-top: 3px; margin-right: 13px;}
+#LAT_box3{width: 34%}
+#LAT_box3 a img{width: 195px; height: 204px;}
+
+/* sns */
+.spageTitle{width: 100%; font-size: 20px; text-align: center;}
+#snsBox{width: 1200px; height: 110px; margin-top: 80px;}
+#sns{width: 220px; height: 75px; margin: 15px auto; text-align: center;}
+#sns a{}
+#sns a img{margin-left: 8px;}
+
+/* insta */
+#instaBox{width: 1200px; height: 175px; margin-top: 80px;}
+#insta{width: 730px; height: 132px; margin: 15px auto; text-align: center;}
+#insta a{}
+#insta a img{margin-left: 8px;}
+
+/* footer */
+#ft{clear: both; width: 100%; background-color: #575756; color: #fff; margin-top: 200px;}
+.ft_Wrap1{width: 1200px; height: 78px; box-sizing: border-box;}
+#ft_logo{float: left; margin: 45px 75px 0px 100px;}
+#ft_logo a{}
+#ft_logo a img{}
+.fnb{}
+.fnb ul{float: left; width: 340px; height: 20px; margin-top: 50px;}
+.fnb ul li{float: left;}
+.fnb ul li a{color: #fff; margin: 10px; font-size: 13px;}
+.fnb ul li a:hover{color: #ffd43f;}
+.ftNumber{}
+.ftNumber a{color: #fff; float: left; font-size: 20px; margin-top: 43px; margin-left: 135px;}
+.ftComent{}
+.ftComent a{color: #fff; float: left; border: 2.5px solid #3c3c3b; border-radius: 5px; background-color: #878786; padding: 1px 7px 1px 7px; margin-top: 46px; margin-left: 20px; font-family: 'Nanum Gothic', sans-serif;}
+
+.ft_Wrap2{width: 1200px; height: 190px; position: relative}
+address.copyright{font-style: normal; font-size: 12px; line-height: 20px; margin-top: 25px; margin-left: 100px; font-family: 'Nanum Gothic', sans-serif;}
+.right{}
+.right p{position: absolute; top: 0; right: 540px; font-size: 13px;}
+.right a{color: #fff; font-size: 12px; font-family: 'Nanum Gothic', sans-serif;}
+.right :nth-child(2){position: absolute; top: 25px; right: 390px; border: 2px solid #fff; border-radius: 5px; padding: 2px 7px;}
+.right :nth-child(3){position: absolute; top: 25px; right: 497px;  border: 2px solid #fff; border-radius: 5px; padding: 2px 7px;}
+
+.ft_Wrap3{width: 1200px; height: 35px; background-color: #3c3c3b;}
+.ft_Wrap3 p{font-size: 10px; margin-left: 100px; padding-top: 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
