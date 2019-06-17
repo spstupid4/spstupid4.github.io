@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="title" content="병무청 웹앱">
+    <meta name="keywords" content="병무청, 군인, 신검신청, 신검, 군입영, 예비군">
+    <meta name="description" content="입엽신청, 징병검사, 예비군동원훈련 일자조회, 군입대 및 군복무 안내">
+    <title>병무청</title>
+    <link rel="shortcut icon" href="./img/icon/favicon_16.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/icon/favicon_16.png">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="common.css">
+    <script src="main.js"></script>
+    <style>
+    
+    </style>
+    <style>
+        body, html { width:100%; height:100%; background:#333;; background-repeat:repeat; }
+        .hd { height:50px; position:fixed; }
+        .ft { position:fixed; bottom:0; left:0; z-index:80; font-size:0.65em; }
+        .page_title { text-align:center; line-height:3; }
+        .service_lst { clear:both; overflow:scroll; padding-bottom:140px; padding-top:1em; background:#333; }
+        .service_lst li { line-height:3; }
+        .service_lst li a { display:block; line-height:4; font-size:1.2em; text-indent:1.5em; color:#fff; 
+                            border-top:1px solid #666;border-bottom:1px solid #000; background:#333; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <!-- a.logo+(input[type=checkbox].ck_item#ck$*2)+(nav.top_btn>li.search*2>label) -->
+            <a href="index.html" class="logo" title="logo"></a>
+            <input type="checkbox" class="ck_item" id="ck1">
+            <input type="checkbox" class="ck_item" id="ck2">
+            <nav class="top_btn">
+                <ul>
+                    <li class="search">
+                        <label for="ck1">검색</label>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="menu">
+                        <label for="ck2">메뉴</label>
+                    </li>
+                </ul>
+            </nav>
+            <!-- nav#find_nav>form.frm1>input[type=text]#keyword.in_data+input[type=submit].frm_btn -->
+            <nav id="find_nav">
+                <form action="" class="frm1">
+                    <input type="text" id="keyword" class="in_data" placeholder="검색어 입력">
+                    <input type="submit" value="검색" class="frm_btn">
+                </form>
+                <p class="hash_title">아래의 자주 사용하는 메뉴 링크를 이용하세요</p>
+                <ul class="hash">
+                    <li class="item1"><a href="sub1.html">예비군</a></li>
+                    <li class="item2"><a href="sub2.html">신체검사</a></li>
+                    <li class="item3"><a href="sub3.html">연기</a></li>
+                    <li class="item4"><a href="sub4.html">입영통지서</a></li>
+                    <li class="item5"><a href="sub5.html">동원훈련</a></li>
+                </ul> 
+                <label for="ck1" class="close"></label>
+            </nav>
+            <nav id="gnb">
+                <ul class="nav">
+                    <li class="item1">
+                        <a class="dp1">나만의 홈페이지(민원)</a>
+                    </li>
+                    <li class="item2">
+                        <a href="#" class="dp1">병역이행안내</a>
+                        <ul class="sub">
+                            <li class="item1">
+                                <a href="#">개요</a>
+                            </li>
+                            <li class="item2">
+                                <a href="#">병역이행일정안내</a>
+                            </li>
+                            <li class="item3">
+                                <a href="#">병역면탈 예방안내</a>
+                            </li>
+                            <li class="item4">
+                                <a href="#">병역준비역 편입</a>
+                            </li>
+                            <li class="item5">
+                                <a href="#">복무제도</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="#" class="dp1">군지원(모병)안내</a>
+                        <ul class="sub">
+                            <li class="item1">
+                                <a href="#">모집안내서비스</a>
+                            </li>
+                            <li class="item2">
+                                <a href="#">장교부사관등 지원</a>
+                            </li>
+                            <li class="item3">
+                                <a href="#">모집알리미</a>
+                            </li>
+                            <li class="item4">
+                                <a href="#">입영 대상자가 알아야할 사항</a>
+                            </li>
+                            <li class="item5">
+                                <a href="#">취업맞춤특기병</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="#" class="dp1">국민참여마당</a>
+                        <ul class="sub">
+                            <li class="item1">
+                                <a href="#">정책참여</a>
+                            </li>
+                            <li class="item2">
+                                <a href="#">국민제안마당</a>
+                            </li>
+                            <li class="item3">
+                                <a href="#">칭찬합시다</a>
+                            </li>
+                            <li class="item4">
+                                <a href="#">자유게시판</a>
+                            </li>
+                            <li class="item5">
+                                <a href="#">안전신문고</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="item5">
+                        <a href="#" class="dp1">병무뉴스</a>
+                        <ul class="sub">
+                                <li class="item1">
+                                    <a href="#">공지사항</a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">KTV보도영상</a>
+                                </li>
+                                <li class="item3">
+                                    <a href="#">정책속보</a>
+                                </li>
+                                <li class="item4">
+                                    <a href="#">포토뉴스</a>
+                                </li>
+                                <li class="item5">
+                                    <a href="#">지방청 소식</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="item6">
+                        <a href="#" class="dp1">병무청소개</a>
+                        <ul class="sub">
+                                <li class="item1">
+                                    <a href="#">병무청 소개</a>
+                                </li>
+                                <li class="item2">
+                                    <a href="#">조직 및 직원안내</a>
+                                </li>
+                                <li class="item3">
+                                    <a href="#">사이버홍보관</a>
+                                </li>
+                                <li class="item4">
+                                    <a href="#">찾아오시는길</a>
+                                </li>
+                                <li class="item5">
+                                    <a href="#">관련사이트</a>
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+                <label for="ck2" class="close"></label>
+            </nav>
+        </header>
+       <h2 class="page_title">서비스목록</h2>
+       <ul class="service_lst">
+           <li class="item1"><a href="#">서비스1</a></li>
+           <li class="item2"><a href="#">서비스2</a></li>
+           <li class="item3"><a href="#">서비스3</a></li>
+           <li class="item4"><a href="#">서비스4</a></li>
+           <li class="item5"><a href="#">서비스5</a></li>
+           <li class="item6"><a href="#">서비스6</a></li>
+           <li class="item7"><a href="#">서비스7</a></li>
+           <li class="item8"><a href="#">서비스8</a></li>
+           <li class="item9"><a href="#">서비스9</a></li>
+           <li class="item10"><a href="#">서비스10</a></li>
+       </ul>
+
+        <footer class="ft">
+            <div class="ft_wrap">
+                <p class="copyright">
+                    (우) 35208 대전광역시 서구 청사로 189, 정부대전청사 2동 / 대표전화 : 1588-9090
+                </p>
+                <br>
+                <address class="copy">
+                    Copyrightⓒ Military Manpower Administration. All Rights Reserved.
+                </address>
+            </div>
+        </footer>
+    </div> 
+</body>
+</html>
